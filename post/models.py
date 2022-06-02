@@ -17,17 +17,15 @@ class Post(models.Model):
         blank=True,
     )
     author = models.ForeignKey(
-        _('Author'),
         get_user_model(),
+        verbose_name=_('Author'),
         on_delete=models.CASCADE,
         related_name='posts',
     )
     like = models.ManyToManyField(
-        _('Like'),
         get_user_model(),
+        verbose_name=_('Like'),
         related_name='liked_posts',
-        null=True,
-        blank=True,
     )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
