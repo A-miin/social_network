@@ -158,10 +158,13 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-BROKER_URL = 'redis://localhost:6379'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+BROKER_URL = env('BROKER_URL', default='redis://localhost:6379')
+BASE_REDIS_URL = env('REDIS_URL', default='redis://localhost:6379')
+CELERY_RESULT_BACKEND = env('CELERY_RESULT_BACKEND', default='redis://localhost:6379')
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = env('UTC', default='Africa/Nairobi')
-BASE_REDIS_URL = env('REDIS_URL', default='redis://localhost:6379')
+
+
+CLEARBIT_BEARER_TOKEN = env('CLEARBIT_BEARER_TOKEN')
