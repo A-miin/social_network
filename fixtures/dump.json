@@ -1,2 +1,66 @@
-Unknown command: 'python'
-Type 'manage.py help' for usage.
+[
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$pauxbgaNxzxOIgjhy4xIL7$CI/NPIVg4iqPSOCUdlTAO+poF754LtSyvt4mITdX/eU=",
+        "last_login": null,
+        "is_superuser": true,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-06-02T12:54:39.717Z",
+        "email": "admin@admin.admin",
+        "fullName": null,
+        "location": null,
+        "bio": null,
+        "site": null,
+        "avatar": null,
+        "is_activated": false,
+        "activation_date": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "post.post",
+    "pk": 1,
+    "fields": {
+        "title": "Post1",
+        "description": "description",
+        "author": 1,
+        "created_at": "2022-06-02T12:55:59.741Z",
+        "updated_at": "2022-06-02T12:55:59.741Z",
+        "like": [
+            1
+        ]
+    }
+},
+{
+    "model": "post.post",
+    "pk": 2,
+    "fields": {
+        "title": "Post2",
+        "description": "description",
+        "author": 1,
+        "created_at": "2022-06-02T12:56:03.918Z",
+        "updated_at": "2022-06-02T12:56:32.494Z",
+        "like": []
+    }
+},
+{
+    "model": "post.post",
+    "pk": 3,
+    "fields": {
+        "title": "Post3",
+        "description": "description",
+        "author": 1,
+        "created_at": "2022-06-02T12:56:07.955Z",
+        "updated_at": "2022-06-02T12:56:07.955Z",
+        "like": [
+            1
+        ]
+    }
+}
+]
